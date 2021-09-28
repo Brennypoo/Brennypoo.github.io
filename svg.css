@@ -1,0 +1,19 @@
+line {
+    stroke: #aaa;
+}
+
+path {
+    stroke: gray;
+    fill: none;
+    stroke-width: 5;
+}
+
+polygon{
+    stroke: gray;
+    fill: brown;
+    stroke-width: 1
+}
+
+rect{
+    stroke: gray;
+}
