@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body>
+
+<script>
+    d3.select("body").append("span");
+
+
+    d3.select("span").append("img")
+        .attr("src", "twitter.jpeg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .on("dblclick", function(){window.open("https://www.twitter.com/");})
+        .on("mouseover", function(){document.getElementById('div1').innerHTML = "In: Twitter";})
+        .on("mouseout", function(){document.getElementById('div2').innerHTML = "Out: Twitter";});
+
+    d3.select("span").append("img")
+        .attr("src", "facebook.jpeg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .on("dblclick", function(){window.open("https://www.facebook.com/");})
+        .on("mouseover", function(){document.getElementById('div1').innerHTML = "In: Facebook";})
+        .on("mouseout", function(){document.getElementById('div2').innerHTML = "Out: Facebook";});
+
+    d3.select("span").append("img")
+        .attr("src", "reddit.jpeg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .on("dblclick", function(){window.open("https://reddit.com/");})
+        .on("mouseover", function(){document.getElementById('div1').innerHTML = "In: Reddit";})
+        .on("mouseout", function(){document.getElementById('div2').innerHTML = "Out: Reddit";});
+
+    d3.select("span").append("img")
+        .attr("src", "linkedin.jpeg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .on("dblclick", function(){window.open("https://www.linkedin.com/");})
+        .on("mouseover", function(){document.getElementById('div1').innerHTML = "In: Whats App";})
+        .on("mouseout", function(){document.getElementById('div2').innerHTML = "Out: Whats App";});
+
+    d3.select("span").append("img")
+        .attr("src", "instagram.jpeg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .on("dblclick", function(){window.open("https://www.instagram.com/");})
+        .on("mouseover", function(){document.getElementById('div1').innerHTML = "In: Instagram";})
+        .on("mouseout", function(){document.getElementById('div2').innerHTML = "Out: Instagram";});
+
+    d3.selectAll("img")
+        .on("mouseenter", function(){d3.select(this.style.opacity = .5);})
+        .on("mouseleave", function(){d3.select(this.style.opacity = 1);})
+        .on("mousedown", function(){d3.select(this.height += 10); d3.select(this.width += 10);})
+        .on("mouseup", function(){d3.select(this.height += 10); d3.select(this.width += 10);});
+
+
+
+    d3.select("body").append("div")
+        .attr("id", "div1");
+    d3.select("body").append("div")
+        .attr("id", "div2");
+    d3.select("body").append("div")
+        .attr("id", "div3");
+
+
+
+   d3.select("span")
+        .on('mousemove', (event) => {
+            let coordinates = d3.pointer(event);
+            document.getElementById('div3').innerHTML = "X: " + coordinates[0] + ', Y: ' + coordinates[1];});
+</script>
+
+</body>
+</html>

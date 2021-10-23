@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <script src="form.js"></script>
+</head>
+<body onload="dropdown()">
+<form>
+    <label for="username">Username:</label><input id=username type="text" name="username"><br>
+    <label for="email">Email:</label><input id=email type="text" name="email"><br>
+    <label for="phone_number">Phone Number:</label><input id=phone_number type="text" name="phone_number"><br>
+    <label for="passwrd">Enter Password:</label><input id=passwrd type="password" name="passwrd"><br>
+    <label for="passwrd_confirm">Confirm Password:</label><input id=passwrd_confirm type="password" name="passwrd_confirm"><br>
+    <label >Gender:</label> <input id=male type="radio" name="gender"><label for="male">Male</label><input id=female type="radio" name="gender"><label for="female">Female</label>
+
+    <br>
+
+    <label>Birthday:</label>
+    <select name="birthday" id="birth_month"></select>
+    <select name="birthday" id="birth_day"></select>
+    <select name="birthday" id="birth_year"></select>
+
+    <br>
+
+    <label>Favorite Music Genre:</label>
+    <input type="checkbox" id="pop"><label for="pop">Pop</label>
+    <input type="checkbox" id="hiphop"><label for="hiphop">Hiphop</label>
+    <input type="checkbox" id="jazz"><label for="jazz">Jazz</label>
+    <input type="checkbox" id="rock"><label for="rock">Rock</label>
+    <input type="checkbox" id="classical"><label for="classical">Classical Music</label>
+    <input type="checkbox" id="country"><label for="country">Country</label>
+
+    <br>
+
+    <br>
+    <div>
+        <input type="submit" value="Submit" > <input type="reset" value="Clear"><br>
+    </div>
+    <div>
+        <p>TODO: REGEX</p>
+        <p><a href="index.html">Home</a></p>
+    </div>
+</form>
+</body>
+</html>
