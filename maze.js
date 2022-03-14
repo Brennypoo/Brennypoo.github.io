@@ -11,7 +11,7 @@ imgFloor.onload = function() {
     this.isReady = true;
 };
 imgFloor.src = 'floor.png';
-function promptUser() {listOfPrompts.push(prompt("size of maze"));}
+function promptUser() {listOfPrompts.push(prompt("size of maze (ex: 15)"));}
 
 promptUser();
 mazeSize = listOfPrompts[0]
