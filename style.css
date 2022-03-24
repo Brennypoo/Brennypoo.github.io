@@ -18,6 +18,10 @@ h2 {
     text-align: left;
 }
 
+ul {
+    background-image: url('img_girl.jpg');
+}
+
 IMG.displayed {
     display: block;
     margin-left: auto;
