@@ -1,4 +1,6 @@
-
+body {
+    background-image: url('img1.jpg');
+  }
 
 h1 {
     color: blue;
@@ -18,9 +20,9 @@ h2 {
     text-align: left;
 }
 
-ul {
-    background-image: url('img_girl.jpg');
-}
+/* ul {
+    /* background-image: url('img1.jpg'); */
+/* } */
 
 IMG.displayed {
     display: block;
